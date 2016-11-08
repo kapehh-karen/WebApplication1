@@ -1,0 +1,102 @@
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\ApplicationInsights.config
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\System.Net.Http.Formatting.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\System.Web.Http.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\System.Web.Http.WebHost.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\System.Net.Http.Formatting.xml
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\System.Web.Http.xml
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\System.Web.Http.WebHost.xml
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\ru\System.Net.Http.Formatting.resources.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\ru\System.Web.Http.resources.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\ru\System.Web.Http.WebHost.resources.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\EntityFramework.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\EntityFramework.xml
+c:\users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.InitialCreate.resources
+C:\Users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
+C:\Users\karen\documents\visual studio 15\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.InitialCreate1.resources
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\ApplicationInsights.config
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\System.Net.Http.Formatting.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\System.Web.Http.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\System.Web.Http.WebHost.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\System.Net.Http.Formatting.xml
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\System.Web.Http.xml
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\System.Web.Http.WebHost.xml
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\ru\System.Net.Http.Formatting.resources.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\ru\System.Web.Http.resources.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\bin\ru\System.Web.Http.WebHost.resources.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.InitialCreate.resources
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.InitialCreate1.resources
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\karen\Documents\GitHub\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

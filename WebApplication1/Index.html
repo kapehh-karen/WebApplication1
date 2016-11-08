@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Kendo UI!</title>
+    <link href="http://kendo.cdn.telerik.com/2016.3.1028/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="http://kendo.cdn.telerik.com/2016.3.1028/styles/kendo.default.min.css" rel="stylesheet" />
+    <script src="http://kendo.cdn.telerik.com/2016.3.1028/js/jquery.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2016.3.1028/js/kendo.all.min.js"></script>
+</head>
+<body>
+    
+    <div id="window">
+        <button id="buttonAdd" type="button">Add</button>
+        <button id="buttonEdit" type="button">Edit</button>
+        <button id="buttonDelete" type="button">Delete</button>
+        <div id="grid"></div>
+    </div>
+
+    <div id="window_createUser">
+        <input type="hidden" name="user_id" value="" />
+
+        <label for="username" class="required">User Name</label>
+        <input type="text" id="username" name="username" class="k-textbox" placeholder="User name" required validationMessage="Enter user name" style="width: 220px;" />
+
+        <br /><br />
+
+        <label for="department" class="required">Department</label>
+        <div id="department"></div>
+
+        <br /><br />
+
+        <button id="buttonOk" type="button">Ok</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var crudServiceBaseUrl = "http://localhost:1948/api";
+
+            var dataArrayDepartments = null;
+            var dataAllDepartments = null;
+            var dataAllUsers = null;
+
+            var uiGrid = null;
+
+            var uiWindowUser = $("#window_createUser").kendoWindow({
+                actions: ['Close'],
+                height: "300px",
+                width: "500px",
+                resizable: false,
+                title: "",
+                visible: false,
+                modal: true,
+                open: function (e) {
+                    var departmentIndex = 0;
+
+                    if (this.__inputUser) {
+                        departmentIndex = this.__inputUser.DepartmentId - 1; // transform ID to index (bad solution)
+                        this.__uiInputId.val(this.__inputUser.Id);
+                        this.__uiTextBox.val(this.__inputUser.UserName);
+                    }
+
+                    this.__uiDropDownList = $("#department").kendoDropDownList({
+                        dataTextField: "Title",
+                        dataValueField: "Id",
+                        dataSource: dataArrayDepartments,
+                        index: departmentIndex,
+                    }).data("kendoDropDownList");
+                },
+                close: function (e) {
+                    this.__inputUser = null;
+                },
+                __uiDropDownList: null,
+                __uiTextBox: null,
+                __uiInputId: null,
+                __inputUser: null,
+                __state: "none"
+            }).data("kendoWindow");
+            uiWindowUser.__uiTextBox = $('#username');
+            uiWindowUser.__uiInputId = $('#user_id');
+
+            var validator = $("#window_createUser").kendoValidator().data("kendoValidator");
+
+            $("#buttonOk").kendoButton({
+                click: function (e) {
+                    if (validator.validate()) {
+                        if (uiWindowUser.__state == "new") {
+                            apiUsersDataSource.add({
+                                UserName: uiWindowUser.__uiTextBox.val(),
+                                DepartmentId: uiWindowUser.__uiDropDownList.value()
+                            });
+                        } else if (uiWindowUser.__state == "edit") {
+                            var user = uiWindowUser.__inputUser;
+                            var dbUser = apiUsersDataSource.at(user.__index);
+                            dbUser.set("UserName", uiWindowUser.__uiTextBox.val());
+                            dbUser.set("DepartmentId", uiWindowUser.__uiDropDownList.value());
+                        }
+                        updateMainList();
+                        uiWindowUser.close();
+                    }
+                }
+            });
+
+            $("#window").kendoWindow({
+                actions: [],
+                height: "600px",
+                width: "500px",
+                title: "Main"
+            }).data("kendoWindow").center().open();
+
+            $("#buttonAdd").kendoButton({
+                click: function (e) {
+                    uiWindowUser.__state = "new";
+                    uiWindowUser.title("Create User");
+                    uiWindowUser.open();
+                }
+            });
+            $("#buttonEdit").kendoButton({
+                click: function (e) {
+                    if (uiGrid === null)
+                        return;
+
+                    var selectedItem = uiGrid.dataItem(uiGrid.select());
+                    if (!selectedItem)
+                        return;
+
+                    var user = dataAllUsers[selectedItem.Id];
+                    uiWindowUser.__state = "edit";
+                    uiWindowUser.__inputUser = user;
+                    uiWindowUser.title("Edit User");
+                    uiWindowUser.open();
+                }
+            });
+            $("#buttonDelete").kendoButton({
+                click: function (e) {
+                    if (uiGrid === null)
+                        return;
+
+                    var selectedItem = uiGrid.dataItem(uiGrid.select());
+                    if (!selectedItem)
+                        return;
+
+                    var user = dataAllUsers[selectedItem.Id];
+                    console.log(user);
+                    console.log(apiUsersDataSource.at(user.__index));
+                    apiUsersDataSource.remove(apiUsersDataSource.at(user.__index));
+                    console.log("UPDATE");
+                    updateMainList();
+                }
+            });
+
+            var apiUsersDataSource = new kendo.data.DataSource({
+                autoSync: true,
+                transport: {
+                    read: {
+                        url: crudServiceBaseUrl + "/Users",
+                        dataType: "json"
+                    },
+                    create: {
+                        url: crudServiceBaseUrl + "/Users",
+                        dataType: "json",
+                        type: "POST"
+                    },
+                    update: {
+                        url: crudServiceBaseUrl + "/Users",
+                        dataType: "json",
+                        type: "PUT"
+                    },
+                    destroy: {
+                        url: crudServiceBaseUrl + "/Users",
+                        dataType: "json",
+                        type: "DELETE"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "Id",
+                        fields: {
+                            Id: {
+                                editable: false,
+                                nullable: true
+                            },
+                            UserName: {
+                                type: "string"
+                            },
+                            DepartmentId: {
+                                type: "number"
+                            }
+                        }
+                    }
+                }
+            });
+
+            var apiDepartmentsDataSource = new kendo.data.DataSource({
+                autoSync: true,
+                transport: {
+                    read: {
+                        url: crudServiceBaseUrl + "/Departments",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "Id",
+                        fields: {
+                            Id: {
+                                editable: false,
+                                nullable: true
+                            },
+                            Title: {
+                                type: "string"
+                            }
+                        }
+                    }
+                }
+            });
+
+            function updateMainList() {
+                apiUsersDataSource.fetch(function () {
+                    var users = apiUsersDataSource.data();
+
+                    // -----
+                    dataAllUsers = {};
+                    for (var i = 0; i < users.length; i++) {
+                        var user = users[i];
+                        user.__index = i;
+                        dataAllUsers[user.Id] = user;
+                    }
+                    // -----
+
+                    apiDepartmentsDataSource.fetch(function () {
+                        var departments = apiDepartmentsDataSource.data();
+                        dataArrayDepartments = departments;
+
+                        // -----
+                        dataAllDepartments = {};
+                        for (var i = 0; i < departments.length; i++) {
+                            var department = departments[i];
+                            dataAllDepartments[department.Id] = department;
+                        }
+                        // -----
+
+                        var departments_ids = {};
+                        var users_dataSource = [];
+
+                        for (var i = 0; i < departments.length; i++) {
+                            var item = departments[i];
+                            departments_ids[item.Id] = item.Title;
+                        }
+
+                        for (var i = 0; i < users.length; i++) {
+                            var item = users[i];
+                            users_dataSource.push({
+                                Id: item.Id,
+                                UserName: item.UserName,
+                                DepartmentName: departments_ids[item.DepartmentId]
+                            });
+                        }
+
+                        uiGrid = $("#grid").kendoGrid({
+                            dataSource: users_dataSource,
+                            columns: [
+                                {
+                                    field: "Id",
+                                    title: "#"
+                                },
+                                {
+                                    field: "UserName",
+                                    title: "User",
+                                },
+                                {
+                                    field: "DepartmentName",
+                                    title: "Department"
+                                }
+                            ],
+                            selectable: true
+                        }).data("kendoGrid");
+
+                    });
+                });
+            }
+
+            updateMainList();
+            
+        });
+    </script>
+
+</body>
+</html>
